@@ -7,3 +7,22 @@ body{
 }
 /*Styling header (nav) section*/
 .navlogo{
+    width: 80px;
+    height: 80px;
+}
+.navul{
+    list-style-type: none;
+   }
+.navdiv{
+    display: flex;
+    width: 100%;
+    border: 5px solid black;
+}
+.navul{
+    display: flex;
+  
+    
+}
+.navul li{
+    border: 5px solid black;
+   }
