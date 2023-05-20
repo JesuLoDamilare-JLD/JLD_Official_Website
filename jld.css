@@ -4,25 +4,50 @@
 body{
     background: url(Homescreen.png) no-repeat center fixed;
     background-size: cover;
+    position: relative;
 }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity (0.5) to make it darker or lighter */
+    z-index: -1;
+  }
+  
+  
 /*Styling header (nav) section*/
 .navlogo{
+    display: inline;
     width: 80px;
     height: 80px;
 }
 .navul{
+    display: inline;
+    float: right;
+    margin-top: 25px;
     list-style-type: none;
    }
 .navdiv{
-    display: flex;
     width: 100%;
-    border: 5px solid black;
-}
-.navul{
-    display: flex;
-  
-    
+    position: fixed;
 }
 .navul li{
-    border: 5px solid black;
+    display: inline;
+    margin: 15px;
+    color: white;
+    font-weight: bolder;
    }
+/* Main section begins */
+.maindiv{
+    text-align: center;    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.maindiv h1{
+    color: white;
+}
