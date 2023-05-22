@@ -20,7 +20,11 @@ body{
     z-index: -1;
   }
   
-  
+  header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+  }
 /*Styling header (nav) section*/
 .navlogo{
     display: inline;
@@ -29,19 +33,21 @@ body{
 }
 .navul{
     display: inline;
-    float: right;
-    margin-top: 25px;
     list-style-type: none;
+    position: absolute;
+    top: 30%;
+    right: 0;
    }
-.navdiv{
-    width: 100%;
-    position: fixed;
+.navdiv img {
+    display: inline;
+    float: left;
 }
 .navul li{
     display: inline;
     margin: 10px;    
     font-weight: bolder;
     padding: 7px;
+    font-family: 'Bree Serif', serif;
    }
 .navul li a{
     text-decoration: none;
@@ -54,19 +60,39 @@ body{
     }
     
 /* Main section begins */
-.maindiv{
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .maindiv {
     text-align: center;
-    height: 50%;    
-    /* position: absolute;
-    top: 50%;
-    left: 50%; */
-}
+    font-family: 'Bree Serif', serif;
+  }
 .maindiv h1{
     color: white;
 }
+#button{
+background-color: red;
+border-radius: 10px;
+color: white;
+font-weight: bold;
+font-size: large;
+margin: 10px;
+padding: 5px 8px;
+font-family: 'Bree Serif', serif;
+
+}
 /* Lets begin with the footer */
-footer{
-    
+.testing{
+    border: 5px solid red;
+}
+footer div {
+    display: inline-block;
+    border: 5px solid red;
 }
 .footerdiv img,
 .footerhandles img
