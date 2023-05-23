@@ -49,7 +49,8 @@ body{
     padding: 7px;
     font-family: 'Bree Serif', serif;
    }
-.navul li a{
+.navul li a,
+.footerlists li a{
     text-decoration: none;
     color: white;
 }
@@ -78,6 +79,7 @@ body{
 #button{
 background-color: red;
 border-radius: 10px;
+border: none;
 color: white;
 font-weight: bold;
 font-size: large;
@@ -87,18 +89,76 @@ font-family: 'Bree Serif', serif;
 
 }
 /* Lets begin with the footer */
-.testing{
-    border: 5px solid red;
+
+footer{
+    color: white;
+    font-size: small;
+    font-weight: lighter;
+    font-family: 'Bree Serif', serif;
 }
+.allfooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
 footer div {
-    display: inline-block;
-    border: 5px solid red;
+   display: inline-block;
 }
-.footerdiv img,
-.footerhandles img
+.footerjldlogo{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.footeraddress img{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.footerhandles img{
+    width: 15px;
+    height: 15px;
+    padding-bottom: 8px;
+}
+.footerlists li,
+.footerhandles li{
+    list-style-type: none;
+        }
+.footerlists li:hover{
+    background-color: red;
+    cursor: pointer;
+}
+.footerdiv p{
+    max-width: 300px;
+}
+.footerlists{
+    display: flex;
+    text-align: left;
+    flex-basis: 350px;
+}
+.footerlists ul{
+    position: relative;
+    right: 10%;
+    line-height: 30px;
+  }
+  
+ .footerhandles ul
 {
-    display: inline;
-    width: 80px;
-    height: 80px;
+    position: relative;
+   right: 25%;
 }
 
+ span{
+    display: flex;
+    margin-left: 300px;
+    align-items: end;
+    height: 2px;
+}
+.allfooter + p{
+    margin-bottom: 10px;
+}
