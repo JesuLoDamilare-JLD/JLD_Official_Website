@@ -162,3 +162,63 @@ footer div {
 .allfooter + p{
     margin-bottom: 10px;
 }
+
+@media screen and (max-width:800px) {
+    body{
+        background: url(Homescreen.png) no-repeat center fixed;
+        /* I need a background image 800 by 1280 */
+        background-size: contain;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .navul li{
+        margin: 2px;    
+       }
+       .footerdiv p{
+        display: none;
+    }
+      
+}
+
+@media screen and (max-width:600px) {
+    body{
+        background: url(Homescreen.png) no-repeat center fixed;
+        /* I need a background image 800 by 1280 */
+        background-size: contain;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .navul li{
+        margin: 0;    
+       }
+       .footerdiv p{
+        display: none;
+    }
+    .footeraddress {
+        display: none;
+    }
+      
+}
+
+@media screen and (max-width:500px) {
+    body{
+        background: url(Homescreen.png) no-repeat center fixed;
+        /* I need a background image 800 by 1280 */
+        background-size: contain;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .navul li{
+        display: ;   
+       }
+       .footerdiv p{
+        display: none;
+    }
+    .footeraddress {
+        display: none;
+    }
+      
+}
