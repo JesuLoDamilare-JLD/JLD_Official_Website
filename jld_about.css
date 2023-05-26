@@ -2,7 +2,7 @@
     margin: 0;    
 }
 body{
-    background: url(Homescreen.png) no-repeat center fixed;
+    background: url(image5.jpg) no-repeat center fixed;
     background-size: cover;
     position: relative;
     display: flex;
@@ -24,6 +24,9 @@ body{
     width: 100%;
     position: sticky;
     top: 0;
+    border: 2px solid red;
+    border-radius: 20px;
+    background-color: red;
   }
 /*Styling header (nav) section*/
 .navlogo{
@@ -61,34 +64,23 @@ body{
     }
     
 /* Main section begins */
-
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-  
-  .maindiv {
+h1{
+    color: white;
     text-align: center;
     font-family: 'Bree Serif', serif;
-  }
-.maindiv h1{
-    color: white;
-}
-#button{
-background-color: red;
-border-radius: 10px;
-border: none;
-color: white;
-font-weight: bold;
-font-size: large;
-margin: 10px;
-padding: 5px 8px;
-font-family: 'Bree Serif', serif;
+    font-weight: bolder;
+       }
+       main{
+        padding: 70px 0;
+       }
 
+p{
+    color: white;
+    font-family: 'Bree Serif', serif;
+    margin: 0 5px;
 }
-/* Lets begin with the footer */
+/* Main section ends */
+/* Footer begins */
 
 footer{
     color: white;
@@ -201,4 +193,3 @@ footer div {
     }
       
 }
-
