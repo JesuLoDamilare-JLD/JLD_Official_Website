@@ -24,6 +24,7 @@ body{
     width: 100%;
     position: sticky;
     top: 0;
+    background-color: rgb(142, 142, 65);
   }
 /*Styling header (nav) section*/
 .navlogo{
@@ -162,7 +163,16 @@ footer div {
 .allfooter + p{
     margin-bottom: 10px;
 }
-
+.footerHr{
+    width: 95%;
+    height: 2px;
+    background-color: rgb(142, 142, 65);
+    border: none;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+/* End of footer */
+/* Media Query */
 @media screen and (max-width:800px) {
     body{
         background: url(Homescreen.png) no-repeat center fixed;
@@ -178,7 +188,9 @@ footer div {
        .footerdiv p{
         display: none;
     }
-      
+   
+    /* end of footer */
+       /* media query */
 }
 
 @media screen and (max-width:600px) {

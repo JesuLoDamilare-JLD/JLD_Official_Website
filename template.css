@@ -60,3 +60,130 @@ body{
     cursor: pointer;
     }
     
+
+
+    /* Lets begin with the footer */
+
+footer{
+    color: white;
+    font-size: small;
+    font-weight: lighter;
+    font-family: 'Bree Serif', serif;
+}
+.allfooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+footer div {
+   display: inline-block;
+}
+.footerjldlogo{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.footeraddress img{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.footerhandles img{
+    width: 15px;
+    height: 15px;
+    padding-bottom: 8px;
+}
+.footerlists li,
+.footerhandles li{
+    list-style-type: none;
+        }
+.footerlists li:hover{
+    background-color: red;
+    cursor: pointer;
+}
+.footerdiv p{
+    max-width: 300px;
+}
+.footerlists{
+    display: flex;
+    text-align: left;
+    flex-basis: 350px;
+}
+.footerlists ul{
+    position: relative;
+    right: 10%;
+    line-height: 30px;
+  }
+  
+ .footerhandles ul
+{
+    position: relative;
+   right: 25%;
+}
+
+ span{
+    display: flex;
+    margin-left: 300px;
+    align-items: end;
+    height: 2px;
+}
+.allfooter + p{
+    margin-bottom: 10px;
+}
+.footerHr{
+    width: 95%;
+    height: 2px;
+    background-color: rgb(142, 142, 65);
+    border: none;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+/* End of footer */
+/* Media Query */
+@media screen and (max-width:800px) {
+    body{
+        background: url(Homescreen.png) no-repeat center fixed;
+        /* I need a background image 800 by 1280 */
+        background-size: contain;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .navul li{
+        margin: 2px;    
+       }
+       .footerdiv p{
+        display: none;
+    }
+   
+    /* end of footer */
+       /* media query */
+}
+
+@media screen and (max-width:600px) {
+    body{
+        background: url(Homescreen.png) no-repeat center fixed;
+        /* I need a background image 800 by 1280 */
+        background-size: contain;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .navul li{
+        margin: 0;    
+       }
+       .footerdiv p{
+        display: none;
+    }
+    .footeraddress {
+        display: none;
+    }
+      
+}
+

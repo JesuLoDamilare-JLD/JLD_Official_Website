@@ -24,9 +24,7 @@ body{
     width: 100%;
     position: sticky;
     top: 0;
-    border: 2px solid red;
-    border-radius: 20px;
-    background-color: red;
+    background-color: rgb(57, 66, 61);
   }
 /*Styling header (nav) section*/
 .navlogo{
@@ -87,6 +85,7 @@ footer{
     font-size: small;
     font-weight: lighter;
     font-family: 'Bree Serif', serif;
+    background-color: rgb(2, 26, 50);
 }
 .allfooter{
     display: flex;
@@ -104,6 +103,9 @@ footer div {
     left: 50%;
     transform: translateX(-50%);
     
+}
+.footeraddress{
+    margin-top: 5px;
 }
 .footeraddress img{
     width: 30px;
