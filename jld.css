@@ -7,6 +7,7 @@ body{
     position: relative;
     display: flex;
     flex-direction: column;
+    font-family: 'Bree Serif', serif;
 }
   
   body::before {
@@ -25,6 +26,7 @@ body{
     position: sticky;
     top: 0;
     background-color: rgb(142, 142, 65);
+    z-index: 999; /* Add this line to set a higher z-index value */
   }
 /*Styling header (nav) section*/
 .navlogo{
@@ -48,7 +50,6 @@ body{
     margin: 10px;    
     font-weight: bolder;
     padding: 7px;
-    font-family: 'Bree Serif', serif;
    }
 .navul li a,
 .footerlists li a{
@@ -63,16 +64,22 @@ body{
     
 /* Main section begins */
 
-.flex {
+ .flex {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 200vh;
+    flex-direction: column;
+  } 
+
+  .mainp{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 80px;
+    width: 80%;
   }
-  
   .maindiv {
     text-align: center;
-    font-family: 'Bree Serif', serif;
   }
 .maindiv h1{
     color: white;
@@ -87,15 +94,66 @@ font-size: large;
 margin: 10px;
 padding: 5px 8px;
 font-family: 'Bree Serif', serif;
-
 }
+button a{
+    text-decoration: none;
+    color: white;
+}
+.slideshow {
+    position: relative;
+    width: 700px; /* Adjust the width to fit your desired size */
+    height: 500px; /* Adjust the height to fit your desired size */
+    overflow: hidden;
+    margin-top: 50px;
+    z-index: 1; /* Add this line to set a lower z-index value */
+    transition: width 2s;
+  }
+  .slideshow:hover{
+    width: 90%;
+  }
+  
+  .slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 0.5s ease;
+  }
+  
+  .slideshow img:first-child {
+    opacity: 1;
+  }
+  
+  @keyframes imageFade {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    33% { opacity: 1; }
+    53% { opacity: 0; }
+    100% { opacity: 0; }
+  }
+  
+  .slideshow img:nth-child(1) {
+    animation: imageFade 10s infinite;
+  }
+  
+  .slideshow img:nth-child(2) {
+    animation: imageFade 10s infinite 3s;
+  }
+  
+  .slideshow img:nth-child(3) {
+    animation: imageFade 10s infinite 6s;
+  }
+  
 /* Lets begin with the footer */
 
 footer{
     color: white;
     font-size: small;
     font-weight: lighter;
-    font-family: 'Bree Serif', serif;
 }
 .allfooter{
     display: flex;
