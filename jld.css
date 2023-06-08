@@ -107,6 +107,8 @@ button a{
     margin-top: 50px;
     z-index: 1; /* Add this line to set a lower z-index value */
     transition: width 2s;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .slideshow:hover{
     width: 90%;
@@ -123,7 +125,6 @@ button a{
     object-position: center;
     transition: opacity 0.5s ease;
   }
-  
   .slideshow img:first-child {
     opacity: 1;
   }
@@ -147,6 +148,7 @@ button a{
   .slideshow img:nth-child(3) {
     animation: imageFade 10s infinite 6s;
   }
+
   
 /* Lets begin with the footer */
 
