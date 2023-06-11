@@ -7,6 +7,7 @@ body{
     position: relative;
     display: flex;
     flex-direction: column;
+    font-family: 'Bree Serif', serif;
 }
   
   body::before {
@@ -24,6 +25,8 @@ body{
     width: 100%;
     position: sticky;
     top: 0;
+    background-color: rgb(142, 142, 65);
+    z-index: 999; /* Add this line to set a higher z-index value */
   }
 /*Styling header (nav) section*/
 .navlogo{
@@ -47,7 +50,6 @@ body{
     margin: 10px;    
     font-weight: bolder;
     padding: 7px;
-    font-family: 'Bree Serif', serif;
    }
 .navul li a,
 .footerlists li a{
@@ -62,13 +64,12 @@ body{
     
 
 
-    /* Lets begin with the footer */
+ /* Lets begin with the footer */
 
 footer{
     color: white;
     font-size: small;
     font-weight: lighter;
-    font-family: 'Bree Serif', serif;
 }
 .allfooter{
     display: flex;
