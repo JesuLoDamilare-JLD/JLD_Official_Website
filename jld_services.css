@@ -79,13 +79,12 @@ main h1,#mainP1{
     width: 70%;
 }
 main img{
-    width: 200px;
-    height: 200px;
-    margin-left: -5px;
+    width: 250px;
+    height: 250px;
+    margin-left: -3px;
     padding-right: 5px;
     float: left;
    }
-
 
 
  /* Lets begin with the footer */
