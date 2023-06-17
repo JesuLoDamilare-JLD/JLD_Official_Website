@@ -122,30 +122,45 @@ button a{
     height: 100%;
     object-fit: cover;
     object-position: center;
-    transition: opacity 0.5s ease;
   }
   .slideshow img:first-child {
     opacity: 1;
   }
   
   @keyframes imageFade {
-    0% { opacity: 0; }
-    20% { opacity: 1; }
-    33% { opacity: 1; }
-    53% { opacity: 0; }
-    100% { opacity: 0; }
-  }
+  0% { opacity: 0; }
+  16.666% { opacity: 1; }
+  33.333% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 0; }
+}
   
+
   .slideshow img:nth-child(1) {
-    animation: imageFade 10s infinite;
+    animation: imageFade 21s infinite 3s;
+    -webkit-animation: imageFade 21s infinite 3s;
   }
   
   .slideshow img:nth-child(2) {
-    animation: imageFade 10s infinite 3s;
+    animation: imageFade 21s infinite 6s;
+    -webkit-animation: imageFade 21s infinite 6s;
   }
   
   .slideshow img:nth-child(3) {
-    animation: imageFade 10s infinite 6s;
+    animation: imageFade 21s infinite 9s;
+    -webkit-animation: imageFade 21s infinite 9s;
+  }
+  .slideshow img:nth-child(4) {
+    animation: imageFade 21s infinite 12s;
+    -webkit-animation: imageFade 21s infinite 12s;
+  }
+  .slideshow img:nth-child(5) {
+    animation: imageFade 21s infinite 15s;
+    -webkit-animation: imageFade 21s infinite 15s;
+  }
+  .slideshow img:nth-child(6) {
+    animation: imageFade 21s infinite 18s;
+    -webkit-animation: imageFade 21s infinite 18s;
   }
   main q{
     display: block;

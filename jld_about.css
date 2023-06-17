@@ -72,10 +72,52 @@ main{
         margin: 20px 5px;
     }
 
-p, li{
+p, li, q{
     color: white;
     font-family: 'Bree Serif', serif;
   }
+  .testimony{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .testimony p{
+    float: right;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  .testimony q{
+    display: inline-block;
+    
+  }
+  .testimony img{
+    width: 70px;
+  }
+  .team img{
+    max-width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+.team{
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+}
+.managers, .hods{
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-around;
+    width: 80%;
+}
+.managers{
+    width: 50%;
+}
+.managers, .hods img{
+    min-height: 300px;
+}
+.ceo, .managers, .hods{
+    margin-bottom: 20px;
+}
 /* Main section ends */
 /* Footer begins */
 
