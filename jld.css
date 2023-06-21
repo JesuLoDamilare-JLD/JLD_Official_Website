@@ -61,7 +61,25 @@ body{
     background-color: rgb(255, 0, 0);
     cursor: pointer;
     }
-    
+  .dropdown-menu{
+    display: none;
+  }
+  .navul li:hover .dropdown-menu{
+    display: block;
+    position: absolute;
+    background: rgb(255, 0, 0);
+    margin-top: 15px;
+    margin-left: 190px;
+  }
+  .dropdown-menu li {
+    display: block;
+}
+  .navul li:hover .dropdown-menu ul
+  {
+    display: block;
+    margin: 10px;
+  }
+  
 /* Main section begins */
 
  .flex {

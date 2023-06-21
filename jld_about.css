@@ -25,6 +25,7 @@ body{
     position: sticky;
     top: 0;
     background-color: rgb(57, 66, 61);
+    z-index: 999;
   }
 /*Styling header (nav) section*/
 .navlogo{
@@ -76,6 +77,41 @@ p, li, q{
     color: white;
     font-family: 'Bree Serif', serif;
   }
+  .csr {
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 1;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .csr img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: slideRight 60s infinite;
+  }
+  
+  @keyframes slideRight {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-800%);
+    }
+    100% {
+        transform: translateX(0%);
+      }
+  }
+  .csr + h1 {
+    margin-top: 30px;
+  }
+  
   .testimony{
     width: 90%;
     margin-left: auto;
@@ -93,6 +129,10 @@ p, li, q{
   .testimony img{
     width: 70px;
   }
+ .testimony + h1{
+    clear: both;
+    margin-top: 35px;
+ }
   .team img{
     max-width: 200px;
     border-radius: 20px;
@@ -102,6 +142,9 @@ p, li, q{
     display: flex;
     align-items: center;    
     flex-direction: column;
+}
+.team p{
+    text-align: center;
 }
 .managers, .hods{
     display: flex;
@@ -117,6 +160,13 @@ p, li, q{
 }
 .ceo, .managers, .hods{
     margin-bottom: 20px;
+}
+main a:last-of-type{
+    color: aqua;
+    text-decoration: none;
+}
+main a:last-of-type:hover{    
+    color: white;
 }
 /* Main section ends */
 /* Footer begins */
