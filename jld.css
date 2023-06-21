@@ -25,61 +25,72 @@ body{
     width: 100%;
     position: sticky;
     top: 0;
-    background-color: rgb(142, 142, 65);
+    /* background-color: rgb(142, 142, 65); */
     z-index: 999; /* Add this line to set a higher z-index value */
   }
 /*Styling header (nav) section*/
 .navlogo{
-    display: inline;
-    width: 80px;
-    height: 80px;
+  display: inline;
+  width: 80px;
+  height: 80px;
 }
 .navul{
-    display: inline;
-    list-style-type: none;
-    position: absolute;
-    top: 30%;
-    right: 0;
-   }
-.navdiv img {
-    display: inline;
-    float: left;
+ /*  display: inline;
+  list-style-type: none;
+  position: absolute;
+  top: 30%; */
+  /* right: 0; */
+  text-align: right;
+  margin-top: -80px;
+  background: rgb(142, 142, 65);
+ }
+/* .navdiv img {
+  display: inline;
+  float: left;
+} */
+.navul ul{
+  display: inline-flex;
+  list-style: none;
 }
-.navul li{
-    display: inline;
-    margin: 10px;    
-    font-weight: bolder;
-    padding: 7px;
-   }
-.navul li a,
-.footerlists li a{
-    text-decoration: none;
-    color: white;
+.navul ul li{
+/*   display: inline; */
+  margin: 15px;    
+  font-weight: bolder;
+  padding: 15px;
+ }
+.navul ul li a,
+.footerlists ul li a{
+  text-decoration: none;
+  color: white;
 }
-.navul li:hover
-    {
-    background-color: rgb(255, 0, 0);
-    cursor: pointer;
-    }
-  .dropdown-menu{
+.navul ul li:hover
+  {
+  background: rgb(255, 0, 0);
+  cursor: pointer;
+  }
+  .navul .dropdown-menu{
     display: none;
   }
-  .navul li:hover .dropdown-menu{
+  .navul ul li:hover .dropdown-menu{
     display: block;
     position: absolute;
-    background: rgb(255, 0, 0);
     margin-top: 15px;
-    margin-left: 190px;
+    margin-left: -15px;
   }
-  .dropdown-menu li {
-    display: block;
-}
-  .navul li:hover .dropdown-menu ul
-  {
-    display: block;
-    margin: 10px;
+  .navul ul li:hover .dropdown-menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
   }
-  
+ /*  .navul li:hover .dropdown-menu{
+    display: inline-block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -15px;
+  } */
 /* Main section begins */
 
  .flex {
