@@ -1,4 +1,119 @@
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bree Serif', serif;
+}
+body{
+    background: url(image5.jpg) no-repeat center fixed;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity (0.5) to make it darker or lighter */
+    z-index: -1;
+  }
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: rgb(57, 66, 61);
+    z-index: 999; /* Add this line to set a higher z-index value */
+  }
+.navlogo{
+    display: inline;
+    width: 80px;
+    height: 80px;
+
+}
+
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navdiv ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.navdiv ul li{
+    width:100px;
+    margin: 10px;
+    padding: 10px;
+    font-weight: bolder;
+}
+.navdiv ul li:last-child{
+    margin-right: 30px;
+}
+.navdiv ul li a{
+    text-decoration:none;
+    color: #fff;
+}
+.navdiv ul li:hover{
+    background-color: red;
+    cursor: pointer;
+    border-radius: 7px;
+    width: auto;
+}
+.navdiv .fas{
+    display: inline;
+    margin-right: 5px;
+    color: #b2ff00;
+}
+.sub-menu-1{
+    display: none;
+}
+.navdiv ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background-color: rgb(142, 142, 65);
+    margin-top: 10px;
+    margin-left: -15px;
+    border-radius: 10px;
+}
+.navdiv ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.navdiv ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.navdiv ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.navdiv ul li:hover .sub-menu-1 ul li a:hover{
+    color: #b2ff00;
+}
+.fa-angle-right{
+    float: right;}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: rgb(240, 110, 110);
+    border-radius: 10px;
+}
+
+
+/* *{
     margin: 0;    
 }
 body{
@@ -16,7 +131,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity (0.5) to make it darker or lighter */
+    background-color: rgba(0, 0, 0, 0.6); 
     z-index: -1;
   }
   
@@ -27,7 +142,6 @@ body{
     background-color: rgb(57, 66, 61);
     z-index: 999;
   }
-/*Styling header (nav) section*/
 .navlogo{
     display: inline;
     width: 80px;
@@ -60,7 +174,7 @@ body{
     {
     background-color: rgb(255, 0, 0);
     cursor: pointer;
-    }
+    } */
     
 /* Main section begins */
 h1{
@@ -175,6 +289,128 @@ footer{
     color: white;
     font-size: small;
     font-weight: lighter;
+    background-color: rgb(2, 26, 50);
+}
+.allfooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+footer div {
+   display: inline-block;
+}
+.footerjldlogo{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.footeraddress img{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.footerhandles img{
+    width: 15px;
+    height: 23px;
+    padding-bottom: 8px;
+    margin-right: 8px;
+}
+.footerlists li,
+.footerhandles li{
+    list-style-type: none;
+        }
+        .footerlists li a{
+          text-decoration: none;
+          color: white;
+      }
+.footerlists li:hover{
+    background-color: red;
+    cursor: pointer;
+}
+.footerdiv p{
+    max-width: 300px;
+}
+.footerlists{
+    display: flex;
+    text-align: left;
+    flex-basis: 200px;
+    margin-right: -30px;
+}
+.footerlists ul{
+    position: relative;
+    right: 10%;
+    line-height: 30px;
+  }
+  
+ .footerhandles ul
+{
+    position: relative;
+   right: 25%;
+}
+
+ span{
+    display: flex;
+    margin-left: 300px;
+    align-items: end;
+    height: 2px;
+}
+.allfooter + p{
+    margin-bottom: 10px;
+}
+
+/* End of footer */
+/* Media Query */
+@media screen and (max-width:800px) {
+    body{
+        background: url(Homescreen.png) no-repeat center fixed;
+        /* I need a background image 800 by 1280 */
+        background-size: contain;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .navul li{
+        margin: 2px;    
+       }
+       .footerdiv p{
+        display: none;
+    }
+   
+    /* end of footer */
+       /* media query */
+}
+
+@media screen and (max-width:600px) {
+    body{
+        background: url(Homescreen.png) no-repeat center fixed;
+        /* I need a background image 800 by 1280 */
+        background-size: contain;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .navul li{
+        margin: 0;    
+       }
+       .footerdiv p{
+        display: none;
+    }
+    .footeraddress {
+        display: none;
+    }
+      
+}
+
+/* footer{
+    color: white;
+    font-size: small;
+    font-weight: lighter;
     font-family: 'Bree Serif', serif;
     background-color: rgb(2, 26, 50);
 }
@@ -251,7 +487,6 @@ footer div {
 @media screen and (max-width:800px) {
     body{
         background: url(Homescreen.png) no-repeat center fixed;
-        /* I need a background image 800 by 1280 */
         background-size: contain;
         position: relative;
         display: flex;
@@ -269,7 +504,6 @@ footer div {
 @media screen and (max-width:600px) {
     body{
         background: url(Homescreen.png) no-repeat center fixed;
-        /* I need a background image 800 by 1280 */
         background-size: contain;
         position: relative;
         display: flex;
@@ -285,4 +519,4 @@ footer div {
         display: none;
     }
       
-}
+} */

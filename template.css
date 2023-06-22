@@ -45,7 +45,6 @@ header{
     list-style: none;
     color: #fff;
 }
-
 .navdiv ul li{
     width:100px;
     margin: 10px;
@@ -180,10 +179,9 @@ body{
     }
      */
 
-
  /* Lets begin with the footer */
 
-footer{
+ footer{
     color: white;
     font-size: small;
     font-weight: lighter;
@@ -214,13 +212,18 @@ footer div {
 }
 .footerhandles img{
     width: 15px;
-    height: 15px;
+    height: 23px;
     padding-bottom: 8px;
+    margin-right: 8px;
 }
 .footerlists li,
 .footerhandles li{
     list-style-type: none;
         }
+        .footerlists li a{
+          text-decoration: none;
+          color: white;
+      }
 .footerlists li:hover{
     background-color: red;
     cursor: pointer;
@@ -231,7 +234,8 @@ footer div {
 .footerlists{
     display: flex;
     text-align: left;
-    flex-basis: 350px;
+    flex-basis: 200px;
+    margin-right: -30px;
 }
 .footerlists ul{
     position: relative;
