@@ -5,7 +5,7 @@
     font-family: 'Bree Serif', serif;
 }
 body{
-    background: url(Homescreen.png) no-repeat center fixed;
+    background: url(servbkg.jpg) no-repeat center fixed;
     background-size: cover;
     position: relative;
     display: flex;
@@ -115,8 +115,35 @@ header{
     
 /* Main section begins */
 main{
-    margin: 20px 5px;
+    margin: 15px 5px;
     color: white;
+}
+.ourSolution{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid red;
+}
+.ourSolution div {
+    display: inline-flex;
+    flex-direction: row;
+    border: 2px solid red;
+}
+.ourSolution img{
+    width: 100px;
+    height: auto;
+}
+
+.ourSolution h1{
+    font-size: 1200%;
+    opacity: 0.4;
+}
+.ourSolution h3{
+    position: absolute;
+    top: 240px;
+    left: 100px;
+    font-size: 600%;
+    color: rgb(37, 37, 243);
 }
 main h1,#mainP1{
     text-align: center;
