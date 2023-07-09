@@ -122,15 +122,16 @@ main{
     width: 95%;
     margin-left: auto;
     margin-right: auto;
+    height: 500px;
     border: 2px solid red;
 }
 .ourSolution div {
-    display: inline-flex;
-    flex-direction: row;
-    border: 2px solid red;
+    display: inline-block;
+    text-align: center;
+    width: 33%;
 }
 .ourSolution img{
-    width: 100px;
+    width: 300px;
     height: auto;
 }
 
