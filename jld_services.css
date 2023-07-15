@@ -119,20 +119,40 @@ main{
     color: white;
 }
 .ourSolution{
-    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    height: 500px;
-    border: 2px solid red;
 }
-.ourSolution div {
-    display: inline-block;
+.flexUp{
+    flex: 50%;
+}
+.flexDown{
+    flex: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.flexDown > div {
+    margin: 30px 0;
+  }
+  
+  .flexDown p {
     text-align: center;
-    width: 33%;
-}
-.ourSolution img{
+    position: relative;
+    top: -23px;
+  }
+  .flexDown button{
+    padding: 0 20px;
+  }
+  .ourSolution img{
     width: 300px;
     height: auto;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.ourSolution .flexDown div:hover img {
+    box-shadow: 0 4px 8px 0 rgba(89, 19, 169, 0.2), 0 6px 20px 0 rgba(232, 16, 16, 0.19);
 }
 
 .ourSolution h1{
