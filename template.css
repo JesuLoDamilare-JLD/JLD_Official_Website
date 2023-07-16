@@ -59,7 +59,7 @@ header{
     color: #fff;
 }
 .navdiv ul li:hover{
-    background-color: red;
+    background-color: rgb(255, 92, 58);
     cursor: pointer;
     border-radius: 7px;
     width: auto;
@@ -108,76 +108,11 @@ header{
     display: block;
     margin-top: -40px;
     margin-left: 140px;
-    background-color: rgb(240, 110, 110);
+    background-color: rgb(139, 0, 0);
     border-radius: 10px;
 }
 
 
-/* Old header template */
-
-/* *{
-    margin: 0;    
-}
-body{
-    background: url(Homescreen.png) no-repeat center fixed;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Bree Serif', serif;
-}
-  
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); 
-  }
-  
-  header{
-    width: 100%;
-    position: sticky;
-    top: 0;
-    background-color: rgb(142, 142, 65);
-    z-index: 999; 
-  }
-
-.navlogo{
-    display: inline;
-    width: 80px;
-    height: 80px;
-}
-.navul{
-    display: inline;
-    list-style-type: none;
-    position: absolute;
-    top: 30%;
-    right: 0;
-   }
-.navdiv img {
-    display: inline;
-    float: left;
-}
-.navul li{
-    display: inline;
-    margin: 10px;    
-    font-weight: bolder;
-    padding: 7px;
-   }
-.navul li a,
-.footerlists li a{
-    text-decoration: none;
-    color: white;
-}
-.navul li:hover
-    {
-    background-color: rgb(255, 0, 0);
-    cursor: pointer;
-    }
-     */
 
  /* Lets begin with the footer */
 

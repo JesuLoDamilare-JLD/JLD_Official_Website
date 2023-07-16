@@ -1,92 +1,169 @@
 *{
-    margin: 0;    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bree Serif', serif;
 }
 body{
-    background: url(Homescreen.png) no-repeat center fixed;
+    background: url(servbkg.jpg) no-repeat center fixed;
     background-size: cover;
     position: relative;
     display: flex;
     flex-direction: column;
-    font-family: 'Bree Serif', serif;
 }
-  
-  body::before {
+body::before {
     content: "";
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity (0.5) to make it darker or lighter */
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity (0.5) to make it darker or lighter */
     z-index: -1;
   }
-  
-  header{
+header{
     width: 100%;
     position: sticky;
     top: 0;
     background-color: rgb(142, 142, 65);
     z-index: 999; /* Add this line to set a higher z-index value */
   }
-/*Styling header (nav) section*/
 .navlogo{
     display: inline;
     width: 80px;
     height: 80px;
-}
-.navul{
-    display: inline;
-    list-style-type: none;
-    position: absolute;
-    top: 30%;
-    right: 0;
-   }
-.navdiv img {
-    display: inline;
-    float: left;
-}
-.navul li{
-    display: inline;
-    margin: 10px;    
-    font-weight: bolder;
-    padding: 7px;
-   }
-.navul li a,
-.footerlists li a{
-    text-decoration: none;
-    color: white;
-}
-.navul li:hover
-    {
-    background-color: rgb(255, 0, 0);
-    cursor: pointer;
-    }
-/* Main section */
-main{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
-    color: white;
-  } 
-main h1{
-    text-align: center;
-    margin-bottom: 20px;
-}
-main a{
-    color: white;
-    text-decoration: none;
-}
-main a:hover{
-    color: aqua;
+
 }
 
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navdiv ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.navdiv ul li{
+    width:100px;
+    margin: 10px;
+    padding: 10px;
+    font-weight: bolder;
+}
+.navdiv ul li:last-child{
+    margin-right: 30px;
+}
+.navdiv ul li a{
+    text-decoration:none;
+    color: #fff;
+}
+.navdiv ul li:hover{
+    background-color: rgb(255, 92, 58);
+    cursor: pointer;
+    border-radius: 7px;
+    width: auto;
+}
+.navdiv .fas{
+    display: inline;
+    margin-right: 5px;
+    color: #b2ff00;
+}
+.sub-menu-1{
+    display: none;
+}
+.navdiv ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background-color: rgb(142, 142, 65);
+    margin-top: 10px;
+    margin-left: -15px;
+    border-radius: 10px;
+}
+.navdiv ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.navdiv ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.navdiv ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.navdiv ul li:hover .sub-menu-1 ul li a:hover{
+    color: #b2ff00;
+}
+.fa-angle-right{
+    float: right;}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: rgb(139, 0, 0);
+    border-radius: 10px;
+}
+
+/* header ends */
+/* main begins */
+main{
+    color: #fff;
+    margin: 10px 0;
+}
+main h1{
+    text-align: center;
+    font-family: "Ewert";
+    margin: 10px 0px;
+    font-size: 50px;
+    color: #b2ff00;
+}
+main p{
+    text-align: center;
+}
+.mainimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 300px;
+    width: 80%;
+}
+.techserv{
+    margin: 0 auto;
+    width: 70%;
+}
+.techservices{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.techservices img{
+    max-width:300px;
+}
+.text{
+    max-width: 60%;
+}
+.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+main a:last-of-type{
+    color: aqua;
+    text-decoration: none;
+}
 
 
  /* Lets begin with the footer */
 
-footer{
+ footer{
     color: white;
     font-size: small;
     font-weight: lighter;
@@ -117,13 +194,18 @@ footer div {
 }
 .footerhandles img{
     width: 15px;
-    height: 15px;
+    height: 23px;
     padding-bottom: 8px;
+    margin-right: 8px;
 }
 .footerlists li,
 .footerhandles li{
     list-style-type: none;
         }
+        .footerlists li a{
+          text-decoration: none;
+          color: white;
+      }
 .footerlists li:hover{
     background-color: red;
     cursor: pointer;
@@ -134,7 +216,8 @@ footer div {
 .footerlists{
     display: flex;
     text-align: left;
-    flex-basis: 350px;
+    flex-basis: 200px;
+    margin-right: -30px;
 }
 .footerlists ul{
     position: relative;

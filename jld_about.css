@@ -5,7 +5,7 @@
     font-family: 'Bree Serif', serif;
 }
 body{
-    background: url(image5.jpg) no-repeat center fixed;
+    background: url(about.jpg) no-repeat center fixed;
     background-size: cover;
     position: relative;
     display: flex;
@@ -18,7 +18,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity (0.5) to make it darker or lighter */
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity (0.5) to make it darker or lighter */
     z-index: -1;
   }
 header{
@@ -59,7 +59,7 @@ header{
     color: #fff;
 }
 .navdiv ul li:hover{
-    background-color: red;
+    background-color: rgb(255, 92, 58);
     cursor: pointer;
     border-radius: 7px;
     width: auto;
@@ -108,84 +108,25 @@ header{
     display: block;
     margin-top: -40px;
     margin-left: 140px;
-    background-color: rgb(240, 110, 110);
+    background-color: rgb(139, 0, 0);
     border-radius: 10px;
 }
 
-
-/* *{
-    margin: 0;    
-}
-body{
-    background: url(image5.jpg) no-repeat center fixed;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-  
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); 
-    z-index: -1;
-  }
-  
-  header{
-    width: 100%;
-    position: sticky;
-    top: 0;
-    background-color: rgb(57, 66, 61);
-    z-index: 999;
-  }
-.navlogo{
-    display: inline;
-    width: 80px;
-    height: 80px;
-}
-.navul{
-    display: inline;
-    list-style-type: none;
-    position: absolute;
-    top: 30%;
-    right: 0;
-   }
-.navdiv img {
-    display: inline;
-    float: left;
-}
-.navul li{
-    display: inline;
-    margin: 10px;    
-    font-weight: bolder;
-    padding: 7px;
-    font-family: 'Bree Serif', serif;
-   }
-.navul li a,
-.footerlists li a{
-    text-decoration: none;
-    color: white;
-}
-.navul li:hover
-    {
-    background-color: rgb(255, 0, 0);
-    cursor: pointer;
-    } */
-    
-/* Main section begins */
 h1{
-    color: white;
+    color: #FFC300;
     text-align: center;
     font-family: 'Bree Serif', serif;
     font-weight: bolder;
+    margin-bottom: 5px;
     }
 main{
-        margin: 20px 5px;
+        margin: 7px 5px;
     }
+main h3{
+    color: #CBD18F;
+    font-family: 'Bree Serif', serif;
+    margin-top: 10px;
+}
 
 p, li, q{
     color: white;
