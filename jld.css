@@ -140,12 +140,12 @@ header{
     font-family: 'Akronim';
   }
   .fasterOne{
-    font-family: "Faster One";
+    font-family: "Blaka Ink";
     text-align: center;
-    width: 70%;
     margin-bottom: 5px;
     font-size: 50px;
-    color: #b2ff00;
+    background-color: #b2ff00;
+    border-radius: 20px;
   }
 
 #button{
