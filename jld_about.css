@@ -173,22 +173,25 @@ p, li, q{
     margin-left: auto;
     margin-right: auto;
   }
-  .testimony p{
-    float: right;
-    margin-bottom: 15px;
-    font-weight: bold;
-  }
-  .testimony q{
-    display: inline-block;
-    
-  }
   .testimony img{
     width: 70px;
   }
+  .testimony p{
+    text-align: right;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: rgb(34, 26, 26);
+  }
+  
+  .testimony q{
+    display: inline-block;
+    color: rgb(144, 139, 111);
+  }
+ 
  .testimony + h1{
     clear: both;
     margin-top: 35px;
- }
+ } 
   .team img{
     max-width: 200px;
     border-radius: 20px;

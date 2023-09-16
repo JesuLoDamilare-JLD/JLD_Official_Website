@@ -187,6 +187,61 @@ main img{
     padding-right: 5px;
     float: left;
    }
+   .b4vid p{
+    margin-bottom: 50px;
+   }
+   .aftervid{
+    margin-top: 30px;
+   }
+.jldvideo{
+    width: 80%;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.stks {
+    overflow: hidden;
+    width: 100%;
+}
+
+.image-container {
+    display: flex;
+    animation: slide 20s linear infinite;
+    justify-content: space-between; /* Add equal spacing between images */
+}
+
+.image-container img {
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    margin: 25px 15px; /* Add margin for spacing */
+}
+
+
+@keyframes slide {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    16.4% {
+        transform: translateX(0);
+    }
+    32.8% {
+        transform: translateX(-100%);
+    }
+    49.2% {
+        transform: translateX(-100%);
+    }
+    65.6% {
+        transform: translateX(-200%);
+    }
+    82% {
+        transform: translateX(-200%);
+    }
+}
+
+
+
 
 
  /* Lets begin with the footer */
