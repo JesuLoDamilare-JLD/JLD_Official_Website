@@ -145,12 +145,22 @@ main h4,
 main p {
   margin: 7px;
 }
-.project_collage,
+
 .dev_process {
   margin: auto;
   width: 80%;
   display: block;
   border-radius: 10px;
+}
+.project_collage {
+  max-height: 450px;
+  object-fit: contain;
+  margin: 20px 0px;
+}
+.collage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #services_container {
   display: flex;

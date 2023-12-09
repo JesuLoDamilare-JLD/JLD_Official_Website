@@ -10,7 +10,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  color: white;
+  color: #fff;
 }
 body::before {
   content: "";
@@ -23,7 +23,7 @@ body::before {
     0,
     0,
     0,
-    0.6
+    0.7
   ); /* Adjust the opacity (0.5) to make it darker or lighter */
   z-index: -1;
 }
@@ -117,54 +117,26 @@ header {
   background-color: rgb(139, 0, 0);
   border-radius: 10px;
 }
-/* Main begins */
+/* main section begins */
 main {
-  margin: 5px 0;
-  display: flex;
-  justify-self: center;
-  align-items: center;
-  flex-direction: column;
-  font-size: 1.2rem;
+  margin: 5px;
 }
-.main {
+main h1,
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.project_collage {
+  max-height: 450px;
+  object-fit: contain;
+  margin: 20px 0px;
+}
+.collage {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  background-color: rgb(1, 33, 22);
-  margin-bottom: 20px;
 }
-main li {
-  list-style-type: none;
-}
-main p {
-  margin: 0 30px;
-}
-main input,
-textarea {
-  border-radius: 3px;
-  outline-style: none;
-  border-style: none;
-}
-input[type="submit"] {
-  font-size: 20px;
-  padding: 5px 80px;
-}
-input[type="text"],
-input[type="tel"],
-input[type="email"] {
-  padding: 5px 80px;
-}
-.map {
-  margin-bottom: 10px;
-  border-radius: 10px;
-  box-shadow: 3px 5px 2px red;
-}
-.contactform {
-  margin-bottom: 10px;
-  border-radius: 10px;
-}
+
 /* Lets begin with the footer */
 
 footer {
