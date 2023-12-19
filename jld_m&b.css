@@ -1,299 +1,308 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Bree Serif', serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bree Serif", serif;
 }
-body{
-    background: url(Homescreen.png) no-repeat center fixed;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    flex-direction: column;
+body {
+  background: url(Homescreen.png) no-repeat center fixed;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity (0.5) to make it darker or lighter */
-    z-index: -1;
-  }
-header{
-    width: 100%;
-    position: sticky;
-    top: 0;
-    background-color: rgb(142, 142, 65);
-    z-index: 999; /* Add this line to set a higher z-index value */
-  }
-.navlogo{
-    display: inline;
-    width: 80px;
-    height: 80px;
-
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Adjust the opacity (0.5) to make it darker or lighter */
+  z-index: -1;
+}
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: rgb(142, 142, 65);
+  z-index: 999; /* Add this line to set a higher z-index value */
+}
+.navlogo {
+  display: inline;
+  width: 80px;
+  height: 80px;
 }
 
-.navdiv{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.navdiv ul{
-    display: inline-flex;
-    list-style: none;
-    color: #fff;
+.navdiv ul {
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
 }
-.navdiv ul li{
-    width:100px;
-    margin: 10px;
-    padding: 10px;
-    font-weight: bolder;
+.navdiv ul li {
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
+  font-weight: bolder;
 }
-.navdiv ul li:last-child{
-    margin-right: 30px;
+.navdiv ul li:last-child {
+  margin-right: 30px;
 }
-.navdiv ul li a{
-    text-decoration:none;
-    color: #fff;
+.navdiv ul li a {
+  text-decoration: none;
+  color: #fff;
 }
-.navdiv ul li:hover{
-    background-color: rgb(255, 92, 58);
-    cursor: pointer;
-    border-radius: 7px;
-    width: auto;
+.navdiv ul li:hover {
+  background-color: rgb(255, 92, 58);
+  cursor: pointer;
+  border-radius: 7px;
+  width: auto;
 }
-.navdiv .fas{
-    display: inline;
-    margin-right: 5px;
-    color: #b2ff00;
+.navdiv .fas {
+  display: inline;
+  margin-right: 5px;
+  color: #b2ff00;
 }
-.sub-menu-1{
-    display: none;
+.sub-menu-1 {
+  display: none;
 }
-.navdiv ul li:hover .sub-menu-1{
-    display: block;
-    position: absolute;
-    background-color: rgb(142, 142, 65);
-    margin-top: 10px;
-    margin-left: -15px;
-    border-radius: 10px;
+.navdiv ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  background-color: rgb(142, 142, 65);
+  margin-top: 10px;
+  margin-left: -15px;
+  border-radius: 10px;
 }
-.navdiv ul li:hover .sub-menu-1 ul{
-    display: block;
-    margin: 10px;
+.navdiv ul li:hover .sub-menu-1 ul {
+  display: block;
+  margin: 10px;
 }
-.navdiv ul li:hover .sub-menu-1 ul li{
-    width: 150px;
-    padding: 10px;
-    border-bottom: 1px dotted #fff;
-    background: transparent;
-    border-radius: 0;
-    text-align: left;
+.navdiv ul li:hover .sub-menu-1 ul li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
 }
-.navdiv ul li:hover .sub-menu-1 ul li:last-child{
-    border-bottom: none;
+.navdiv ul li:hover .sub-menu-1 ul li:last-child {
+  border-bottom: none;
 }
-.navdiv ul li:hover .sub-menu-1 ul li a:hover{
-    color: #b2ff00;
+.navdiv ul li:hover .sub-menu-1 ul li a:hover {
+  color: #b2ff00;
 }
-.fa-angle-right{
-    float: right;}
-.sub-menu-2{
-    display: none;
+.fa-angle-right {
+  float: right;
 }
-.hover-me:hover .sub-menu-2{
-    position: absolute;
-    display: block;
-    margin-top: -40px;
-    margin-left: 140px;
-    background-color: rgb(139, 0, 0);
-    border-radius: 10px;
+.sub-menu-2 {
+  display: none;
+}
+.hover-me:hover .sub-menu-2 {
+  position: absolute;
+  display: block;
+  margin-top: -40px;
+  margin-left: 140px;
+  background-color: rgb(139, 0, 0);
+  border-radius: 10px;
 }
 
 /* Main Section */
-main{
-    color: #e3f9f9;  
-    margin: 30px;
-    width: 90%;
-    border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.4);
+main {
+  color: #e3f9f9;
+  margin: 30px;
+  width: 90%;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.4);
 }
-.maincontent{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
+.maincontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
-.mainInsideContent{
-    margin: 5px;
+.mainInsideContent {
+  margin: 5px;
 }
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
-h3, h2{
-    margin-top: 15px;
-    line-height: 35px;
-    }
-h4{
-    display: inline;
-    float: left;
-    margin-right: 3px;
-    text-decoration: underline;
+h3,
+h2 {
+  margin-top: 15px;
+  line-height: 35px;
 }
-h1, h2, h3{
-    color: #a9dddd;
+h4 {
+  display: inline;
+  float: left;
+  margin-right: 3px;
+  text-decoration: underline;
 }
-.gallery{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+h1,
+h2,
+h3 {
+  color: #a9dddd;
 }
-img{
-    display: flex;    
-    width: 50%;
-    margin: 5px;
-    border-radius: 7px;
-    width: 50%;
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+img {
+  display: flex;
+  width: 50%;
+  margin: 5px;
+  border-radius: 7px;
+  width: 50%;
 }
 
-a{
-    text-decoration: none;
-    color: #a9dddd;
+a {
+  text-decoration: none;
+  color: #a9dddd;
 }
-a:hover{
-    color: #b2ff00;
+a:hover {
+  color: #b2ff00;
 }
- /* Lets begin with the footer */
+/* Lets begin with the footer */
 
- footer{
-    color: white;
-    font-size: small;
-    font-weight: lighter;
+footer {
+  color: white;
+  font-size: small;
+  font-weight: lighter;
 }
-.allfooter{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    }
+.footerdiv p,
+footer p:last-child {
+  margin-left: 10px;
+}
+
+.allfooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 footer div {
-   display: inline-block;
+  display: inline-block;
 }
-.footerjldlogo{
-    width: 60px;
-    height: 60px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    
+.footerjldlogo {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.footeraddress img{
-    width: 30px;
-    height: 30px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+.footeraddress img {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.footerhandles img{
-    width: 15px;
-    height: 23px;
-    padding-bottom: 8px;
-    margin-right: 8px;
+.footerhandles img {
+  width: 15px;
+  height: 23px;
+  padding-bottom: 8px;
+  margin-right: 8px;
 }
 .footerlists li,
-.footerhandles li{
-    list-style-type: none;
-        }
-        .footerlists li a{
-          text-decoration: none;
-          color: white;
-      }
-.footerlists li:hover{
-    background-color: red;
-    cursor: pointer;
+.footerhandles li {
+  list-style-type: none;
 }
-.footerdiv p{
-    max-width: 300px;
+.footerlists li a {
+  text-decoration: none;
+  color: white;
 }
-.footerlists{
-    display: flex;
-    text-align: left;
-    flex-basis: 200px;
-    margin-right: -30px;
+.footerlists li:hover {
+  background-color: red;
+  cursor: pointer;
 }
-.footerlists ul{
-    position: relative;
-    right: 10%;
-    line-height: 30px;
-  }
-  
- .footerhandles ul
-{
-    position: relative;
-   right: 25%;
+.footerdiv p {
+  max-width: 300px;
+}
+.footerlists {
+  display: flex;
+  text-align: left;
+  flex-basis: 200px;
+  margin-right: -30px;
+}
+.footerlists ul {
+  position: relative;
+  right: 10%;
+  line-height: 30px;
 }
 
- span{
-    display: flex;
-    margin-left: 300px;
-    align-items: end;
-    height: 2px;
+.footerhandles ul {
+  position: relative;
+  right: 25%;
 }
-.allfooter + p{
-    margin-bottom: 10px;
+
+span {
+  display: flex;
+  margin-left: 300px;
+  align-items: end;
+  height: 2px;
 }
-.footerHr{
-    width: 95%;
-    height: 2px;
-    background-color: rgb(142, 142, 65);
-    border: none;
-    margin: 0 auto;
-    margin-bottom: 5px;
+.allfooter + p {
+  margin-bottom: 10px;
+}
+.footerHr {
+  width: 95%;
+  height: 2px;
+  background-color: rgb(142, 142, 65);
+  border: none;
+  margin: 0 auto;
+  margin-bottom: 5px;
 }
 /* End of footer */
 /* Media Query */
-@media screen and (max-width:800px) {
-    body{
-        background: url(Homescreen.png) no-repeat center fixed;
-        /* I need a background image 800 by 1280 */
-        background-size: contain;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-    }
-    .navul li{
-        margin: 2px;    
-       }
-       .footerdiv p{
-        display: none;
-    }
-   
-    /* end of footer */
-       /* media query */
+@media screen and (max-width: 800px) {
+  body {
+    background: url(Homescreen.png) no-repeat center fixed;
+    /* I need a background image 800 by 1280 */
+    background-size: contain;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .navul li {
+    margin: 2px;
+  }
+  .footerdiv p {
+    display: none;
+  }
+
+  /* end of footer */
+  /* media query */
 }
 
-@media screen and (max-width:600px) {
-    body{
-        background: url(Homescreen.png) no-repeat center fixed;
-        /* I need a background image 800 by 1280 */
-        background-size: contain;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-    }
-    .navul li{
-        margin: 0;    
-       }
-       .footerdiv p{
-        display: none;
-    }
-    .footeraddress {
-        display: none;
-    }
-      
+@media screen and (max-width: 600px) {
+  body {
+    background: url(Homescreen.png) no-repeat center fixed;
+    /* I need a background image 800 by 1280 */
+    background-size: contain;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .navul li {
+    margin: 0;
+  }
+  .footerdiv p {
+    display: none;
+  }
+  .footeraddress {
+    display: none;
+  }
 }
-

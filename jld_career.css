@@ -197,6 +197,11 @@ footer {
   font-size: small;
   font-weight: lighter;
 }
+.footerdiv p,
+footer p:last-child {
+  margin-left: 10px;
+}
+
 .allfooter {
   display: flex;
   justify-content: space-between;

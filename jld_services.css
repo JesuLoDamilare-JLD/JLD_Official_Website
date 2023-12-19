@@ -1,376 +1,387 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Bree Serif', serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bree Serif", serif;
 }
-body{
-    background: url(servbkg.jpg) no-repeat center fixed;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    flex-direction: column;
+body {
+  background: url(servbkg.jpg) no-repeat center fixed;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity (0.5) to make it darker or lighter */
-    z-index: -1;
-  }
-header{
-    width: 100%;
-    position: sticky;
-    top: 0;
-    background-color: rgb(142, 142, 65);
-    z-index: 999; /* Add this line to set a higher z-index value */
-  }
-.navlogo{
-    display: inline;
-    width: 80px;
-    height: 80px;
-
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Adjust the opacity (0.5) to make it darker or lighter */
+  z-index: -1;
+}
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: rgb(142, 142, 65);
+  z-index: 999; /* Add this line to set a higher z-index value */
+}
+.navlogo {
+  display: inline;
+  width: 80px;
+  height: 80px;
 }
 
-.navdiv{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.navdiv ul{
-    display: inline-flex;
-    list-style: none;
-    color: #fff;
+.navdiv ul {
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
 }
-.navdiv ul li{
-    width:100px;
-    margin: 10px;
-    padding: 10px;
-    font-weight: bolder;
+.navdiv ul li {
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
+  font-weight: bolder;
 }
-.navdiv ul li:last-child{
-    margin-right: 30px;
+.navdiv ul li:last-child {
+  margin-right: 30px;
 }
-.navdiv ul li a{
-    text-decoration:none;
-    color: #fff;
+.navdiv ul li a {
+  text-decoration: none;
+  color: #fff;
 }
-.navdiv ul li:hover{
-    background-color: rgb(255, 92, 58);
-    cursor: pointer;
-    border-radius: 7px;
-    width: auto;
+.navdiv ul li:hover {
+  background-color: rgb(255, 92, 58);
+  cursor: pointer;
+  border-radius: 7px;
+  width: auto;
 }
-.navdiv .fas{
-    display: inline;
-    margin-right: 5px;
-    color: #b2ff00;
+.navdiv .fas {
+  display: inline;
+  margin-right: 5px;
+  color: #b2ff00;
 }
-.sub-menu-1{
-    display: none;
+.sub-menu-1 {
+  display: none;
 }
-.navdiv ul li:hover .sub-menu-1{
-    display: block;
-    position: absolute;
-    background-color: rgb(142, 142, 65);
-    margin-top: 10px;
-    margin-left: -15px;
-    border-radius: 10px;
+.navdiv ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  background-color: rgb(142, 142, 65);
+  margin-top: 10px;
+  margin-left: -15px;
+  border-radius: 10px;
 }
-.navdiv ul li:hover .sub-menu-1 ul{
-    display: block;
-    margin: 10px;
+.navdiv ul li:hover .sub-menu-1 ul {
+  display: block;
+  margin: 10px;
 }
-.navdiv ul li:hover .sub-menu-1 ul li{
-    width: 150px;
-    padding: 10px;
-    border-bottom: 1px dotted #fff;
-    background: transparent;
-    border-radius: 0;
-    text-align: left;
+.navdiv ul li:hover .sub-menu-1 ul li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
 }
-.navdiv ul li:hover .sub-menu-1 ul li:last-child{
-    border-bottom: none;
+.navdiv ul li:hover .sub-menu-1 ul li:last-child {
+  border-bottom: none;
 }
-.navdiv ul li:hover .sub-menu-1 ul li a:hover{
-    color: #b2ff00;
+.navdiv ul li:hover .sub-menu-1 ul li a:hover {
+  color: #b2ff00;
 }
-.fa-angle-right{
-    float: right;}
-.sub-menu-2{
-    display: none;
+.fa-angle-right {
+  float: right;
 }
-.disabled{
-    pointer-events: none;
+.sub-menu-2 {
+  display: none;
 }
-.hover-me:hover .sub-menu-2{
-    position: absolute;
-    display: block;
-    margin-top: -40px;
-    margin-left: 140px;
-    background-color: rgb(139, 0, 0);
-    border-radius: 10px;
+.disabled {
+  pointer-events: none;
 }
-   
-    
+.hover-me:hover .sub-menu-2 {
+  position: absolute;
+  display: block;
+  margin-top: -40px;
+  margin-left: 140px;
+  background-color: rgb(139, 0, 0);
+  border-radius: 10px;
+}
+
 /* Main section begins */
-main{
-    margin: 15px 5px;
-    color: white;
+main {
+  margin: 15px 5px;
+  color: white;
 }
-.ourSolution{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+.ourSolution {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
-.flexUp{
-    flex: 50%;
+.flexUp {
+  flex: 50%;
 }
-.flexDown{
-    flex: 50%;
-    display: flex;
-    justify-content: space-around;
-}
-.flexDown > div {
-    margin: 30px 0;
-  }
-  
-  .flexDown p {
-    text-align: center;
-    position: relative;
-    top: -23px;
-  }
-  .flexDown button{
-    padding: 0 20px;
-  }
-  .ourSolution img{
-    width: 300px;
-    height: auto;
-    border-radius: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+.ourSolution img {
+  width: 300px;
+  height: auto;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .ourSolution .flexDown div:hover img {
-    box-shadow: 0 4px 8px 0 rgba(89, 19, 169, 0.2), 0 6px 20px 0 rgba(232, 16, 16, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(89, 19, 169, 0.2),
+    0 6px 20px 0 rgba(232, 16, 16, 0.19);
 }
 
-.ourSolution h1{
-    font-size: 1200%;
-    opacity: 0.4;
+.ourSolution h1 {
+  font-size: 1200%;
+  opacity: 0.4;
 }
-.ourSolution h3{
-    position: absolute;
-    top: 240px;
-    left: 100px;
-    font-size: 600%;
-    color: rgb(37, 37, 243);
+.ourSolution h3 {
+  position: absolute;
+  top: 240px;
+  left: 100px;
+  font-size: 600%;
+  color: rgb(37, 37, 243);
 }
-main h1,#mainP1{
-    text-align: center;
+.testcont {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0;
 }
-#mainP1, q{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    width: 70%;
+.testing1 {
+  position: relative;
+  display: inline-block;
 }
-main img{
-    width: 250px;
-    height: 250px;
-    margin-left: -3px;
-    padding-right: 5px;
-    float: left;
-   }
-   .b4vid p{
-    margin-bottom: 50px;
-   }
-   .aftervid{
-    margin-top: 30px;
-   }
-.jldvideo{
-    width: 80%;
-    height: 400px;
-    display: block;
-    margin: 0 auto;
+.testing {
+  padding: 3px 20px;
+  background-color: aquamarine;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-
+.testing a {
+  text-decoration: none;
+  color: black;
+}
+main h1,
+#mainP1 {
+  text-align: center;
+}
+#mainP1,
+q {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  width: 70%;
+}
+main img {
+  width: 250px;
+  height: 250px;
+  margin-left: -3px;
+  padding-right: 5px;
+  float: left;
+}
+.b4vid p {
+  margin-bottom: 50px;
+}
+.aftervid {
+  margin-top: 30px;
+}
+.jldvideo {
+  width: 80%;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+}
 
 .stks {
-    overflow: hidden;
-    width: 100%;
+  overflow: hidden;
+  width: 100%;
 }
 
 .image-container {
-    display: flex;
-    animation: slide 20s linear infinite;
-    justify-content: space-between; /* Add equal spacing between images */
+  display: flex;
+  animation: slide 20s linear infinite;
+  justify-content: space-between; /* Add equal spacing between images */
 }
 
 .image-container img {
-    width: 150px; /* Set a fixed width */
-    height: 150px; /* Set a fixed height */
-    margin: 25px 15px; /* Add margin for spacing */
+  width: 150px; /* Set a fixed width */
+  height: 150px; /* Set a fixed height */
+  margin: 25px 15px; /* Add margin for spacing */
 }
-
 
 @keyframes slide {
-    0%, 100% {
-        transform: translateX(0);
-    }
-    16.4% {
-        transform: translateX(0);
-    }
-    32.8% {
-        transform: translateX(-100%);
-    }
-    49.2% {
-        transform: translateX(-100%);
-    }
-    65.6% {
-        transform: translateX(-200%);
-    }
-    82% {
-        transform: translateX(-200%);
-    }
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  16.4% {
+    transform: translateX(0);
+  }
+  32.8% {
+    transform: translateX(-100%);
+  }
+  49.2% {
+    transform: translateX(-100%);
+  }
+  65.6% {
+    transform: translateX(-200%);
+  }
+  82% {
+    transform: translateX(-200%);
+  }
 }
 
+/* Lets begin with the footer */
 
-
-
-
- /* Lets begin with the footer */
-
- footer{
-    color: white;
-    font-size: small;
-    font-weight: lighter;
+footer {
+  color: white;
+  font-size: small;
+  font-weight: lighter;
 }
-.allfooter{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    }
+.allfooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 footer div {
-   display: inline-block;
+  display: inline-block;
 }
-.footerjldlogo{
-    width: 60px;
-    height: 60px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    
-}
-.footeraddress img{
-    width: 30px;
-    height: 30px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.footerhandles img{
-    width: 15px;
-    height: 23px;
-    padding-bottom: 8px;
-    margin-right: 8px;
-}
-.footerlists li,
-.footerhandles li{
-    list-style-type: none;
-        }
-        .footerlists li a{
-          text-decoration: none;
-          color: white;
-      }
-.footerlists li:hover{
-    background-color: red;
-    cursor: pointer;
-}
-.footerdiv p{
-    max-width: 300px;
-}
-.footerlists{
-    display: flex;
-    text-align: left;
-    flex-basis: 200px;
-    margin-right: -30px;
-}
-.footerlists ul{
-    position: relative;
-    right: 10%;
-    line-height: 30px;
-  }
-  
- .footerhandles ul
-{
-    position: relative;
-   right: 25%;
+.footerdiv p,
+footer p:last-child {
+  margin-left: 10px;
 }
 
- span{
-    display: flex;
-    margin-left: 300px;
-    align-items: end;
-    height: 2px;
+.footerjldlogo {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.allfooter + p{
-    margin-bottom: 10px;
+.footeraddress img {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.footerHr{
-    width: 95%;
-    height: 2px;
-    background-color: rgb(142, 142, 65);
-    border: none;
-    margin: 0 auto;
-    margin-bottom: 5px;
+.footerhandles img {
+  width: 15px;
+  height: 23px;
+  padding-bottom: 8px;
+  margin-right: 8px;
+}
+.footerlists li,
+.footerhandles li {
+  list-style-type: none;
+}
+.footerlists li a {
+  text-decoration: none;
+  color: white;
+}
+.footerlists li:hover {
+  background-color: red;
+  cursor: pointer;
+}
+.footerdiv p {
+  max-width: 300px;
+}
+.footerlists {
+  display: flex;
+  text-align: left;
+  flex-basis: 200px;
+  margin-right: -30px;
+}
+.footerlists ul {
+  position: relative;
+  right: 10%;
+  line-height: 30px;
+}
+
+.footerhandles ul {
+  position: relative;
+  right: 25%;
+}
+
+span {
+  display: flex;
+  margin-left: 300px;
+  align-items: end;
+  height: 2px;
+}
+.allfooter + p {
+  margin-bottom: 10px;
+}
+.footerHr {
+  width: 95%;
+  height: 2px;
+  background-color: rgb(142, 142, 65);
+  border: none;
+  margin: 0 auto;
+  margin-bottom: 5px;
 }
 /* End of footer */
 /* Media Query */
-@media screen and (max-width:800px) {
-    body{
-        background: url(Homescreen.png) no-repeat center fixed;
-        /* I need a background image 800 by 1280 */
-        background-size: contain;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-    }
-    .navul li{
-        margin: 2px;    
-       }
-       .footerdiv p{
-        display: none;
-    }
-   
-    /* end of footer */
-       /* media query */
+@media screen and (max-width: 800px) {
+  body {
+    background: url(Homescreen.png) no-repeat center fixed;
+    /* I need a background image 800 by 1280 */
+    background-size: contain;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .navul li {
+    margin: 2px;
+  }
+  .footerdiv p {
+    display: none;
+  }
+
+  /* end of footer */
+  /* media query */
 }
 
-@media screen and (max-width:600px) {
-    body{
-        background: url(Homescreen.png) no-repeat center fixed;
-        /* I need a background image 800 by 1280 */
-        background-size: contain;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-    }
-    .navul li{
-        margin: 0;    
-       }
-       .footerdiv p{
-        display: none;
-    }
-    .footeraddress {
-        display: none;
-    }
-      
+@media screen and (max-width: 600px) {
+  body {
+    background: url(Homescreen.png) no-repeat center fixed;
+    /* I need a background image 800 by 1280 */
+    background-size: contain;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .navul li {
+    margin: 0;
+  }
+  .footerdiv p {
+    display: none;
+  }
+  .footeraddress {
+    display: none;
+  }
 }
-

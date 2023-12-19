@@ -177,6 +177,10 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+.footerdiv p,
+footer p:last-child {
+  margin-left: 10px;
+}
 
 footer div {
   display: inline-block;
