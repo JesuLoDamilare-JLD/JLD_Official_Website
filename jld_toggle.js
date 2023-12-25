@@ -3,7 +3,7 @@ const navListItems = document.querySelectorAll(".navdiv ul li");
 
 toggleButton.addEventListener("click", () => {
   // Check if the viewport is below 375px (as defined in your media query)
-  if (window.innerWidth <= 768) {
+  if (window.innerWidth <= 1024) {
     // Toggle the display property for each list item
     navListItems.forEach((item) => {
       if (item.style.display === "none" || item.style.display === "") {
