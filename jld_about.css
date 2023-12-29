@@ -38,6 +38,21 @@ header {
   width: 80px;
   height: 80px;
 }
+.toggle-button {
+  position: absolute;
+  top: 1.9rem;
+  right: 0.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 21px;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+}
 
 .navdiv {
   display: flex;
@@ -165,6 +180,10 @@ strong {
   height: 100%;
   object-fit: cover;
   animation: slideRight 60s infinite;
+}
+#prev,
+#next {
+  display: none;
 }
 
 @keyframes slideRight {
@@ -337,159 +356,118 @@ span {
   margin: 0 auto;
   margin-bottom: 5px;
 }
+.footeraddress p:nth-of-type(2) {
+  margin-left: 0px;
+}
 
 /* End of footer */
 /* Media Query */
-@media screen and (max-width: 800px) {
-  body {
-    background: url(Homescreen.png) no-repeat center fixed;
-    /* I need a background image 800 by 1280 */
-    background-size: contain;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  }
+@media screen and (max-width: 767px) {
   .navul li {
-    margin: 2px;
-  }
-  .footerdiv p {
     display: none;
   }
-
-  /* end of footer */
-  /* media query */
-}
-
-@media screen and (max-width: 600px) {
-  body {
-    background: url(Homescreen.png) no-repeat center fixed;
-    /* I need a background image 800 by 1280 */
-    background-size: contain;
-    position: relative;
+  .toggle-button {
     display: flex;
+  }
+  .navdiv {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
+    align-items: flex-start;
   }
-  .navul li {
-    margin: 0;
+  .navdiv ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    /* margin-top: -50px;  */
   }
-  .footerdiv p {
+  .navdiv ul li:last-child {
+    margin-left: 30px;
+  }
+  .navdiv ul li {
+    margin-top: -5px;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+  }
+  .navdiv ul li:hover .sub-menu-1 {
     display: none;
   }
+  p {
+    font-size: 0.73rem;
+  }
+
+  .csr {
+    width: 95%;
+  }
+  .team > div {
+    display: none;
+  }
+  #prev,
+  #next {
+    display: inline-flex;
+    margin: 3px 30px;
+    padding: 2px 10px;
+  }
+  .footerdiv p,
   .footeraddress {
     display: none;
   }
-}
-
-/* footer{
-    color: white;
-    font-size: small;
-    font-weight: lighter;
-    font-family: 'Bree Serif', serif;
-    background-color: rgb(2, 26, 50);
-}
-.allfooter{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    }
-
-footer div {
-   display: inline-block;
-}
-.footerjldlogo{
-    width: 60px;
-    height: 60px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    
-}
-.footeraddress{
-    margin-top: 5px;
-}
-.footeraddress img{
-    width: 30px;
-    height: 30px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.footerhandles img{
-    width: 15px;
-    height: 15px;
-    padding-bottom: 8px;
-}
-.footerlists li,
-.footerhandles li{
-    list-style-type: none;
-        }
-.footerlists li:hover{
-    background-color: red;
-    cursor: pointer;
-}
-.footerdiv p{
-    max-width: 300px;
-}
-.footerlists{
-    display: flex;
-    text-align: left;
-    flex-basis: 350px;
-}
-.footerlists ul{
-    position: relative;
-    right: 10%;
-    line-height: 30px;
+  hr {
+    width: 100px;
   }
-  
- .footerhandles ul
-{
-    position: relative;
-   right: 25%;
-}
-
- span{
+  .footerlists span {
+    margin-left: 90px;
+  }
+  .footerlists {
     display: flex;
-    margin-left: 300px;
-    align-items: end;
-    height: 2px;
-}
-.allfooter + p{
-    margin-bottom: 10px;
-}
-
-@media screen and (max-width:800px) {
-    body{
-        background: url(Homescreen.png) no-repeat center fixed;
-        background-size: contain;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-    }
-    .navul li{
-        margin: 2px;    
-       }
-       .footerdiv p{
-        display: none;
-    }
-      
+    justify-content: center;
+    margin: auto;
+  }
+  footer p:last-child {
+    text-align: center;
+    font-size: 0.73rem;
+    margin: 5px;
+  }
 }
 
-@media screen and (max-width:600px) {
-    body{
-        background: url(Homescreen.png) no-repeat center fixed;
-        background-size: contain;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-    }
-    .navul li{
-        margin: 0;    
-       }
-       .footerdiv p{
-        display: none;
-    }
-    .footeraddress {
-        display: none;
-    }
-      
-} */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  p {
+    font-size: 0.73rem;
+  }
+
+  .csr {
+    width: 95%;
+  }
+  .managers {
+    width: 70%;
+  }
+  .hods {
+    width: 100%;
+  }
+  .hods img {
+    width: 100%;
+  }
+  .footerdiv p,
+  .footeraddress {
+    display: none;
+  }
+  hr {
+    width: 100px;
+  }
+  .footerlists span {
+    margin-left: 90px;
+  }
+  .footerlists {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  footer p:last-child {
+    text-align: center;
+    font-size: 0.73rem;
+    margin: 5px;
+  }
+}

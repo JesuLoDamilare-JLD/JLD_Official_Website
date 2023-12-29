@@ -479,7 +479,23 @@ let descriptions = {
   <div></div>
   `,
   "Select a course": `<div class="role-container"><div class="job-roles">
-  <p>Enrolling in our computer courses is easy and can be done entirely online. Simply fill out our online enrollment form with your details and the course you're interested in. Once we've received your form, a member of our team will contact you to discuss the next steps in your enrollment process.
+  <p>
+  <p>Enrolling in a course at our company is a process that has been designed with your convenience and learning goals in mind. The entire enrollment process can be completed online, making it easier for you to start your learning journey from anywhere.</p><br>
+
+<p>To begin your enrollment, you'll need to complete our user-friendly online enrollment form. This form is designed to gather all the essential information we need to understand your learning needs and interests. You'll be asked to provide your personal details and select the course you're interested in. The form is concise and can be filled out quickly, making the enrollment process straightforward for you.</p><br>
+
+<p>Once you've filled out the form, we encourage you to double-check all your information for accuracy before submitting it. After submission, your enrollment will be sent directly to our course management team.</p><br>
+
+<p>Our course management team is composed of dedicated professionals who are committed to providing the best learning experience. Once they receive your enrollment, they will review it thoroughly. They may look at your chosen course, your current skills, and how the course aligns with your learning goals.</p><br>
+
+<p>If your enrollment aligns with the course requirements, they will contact you to discuss the next steps. This could involve an initial consultation to understand your learning objectives better, followed by the course schedule and commencement details. This is also an opportunity for you to ask any questions you may have about the course, our company, or the enrollment process.</p><br>
+
+<p>We understand that enrolling in a course is a significant step in a person's learning journey. That's why we strive to make the enrollment process as clear and straightforward as possible. We value the time and effort you put into your enrollment, and we look forward to the possibility of welcoming you to our learning community.</p><br>
+
+<p>Please note: Our company is committed to equal learning opportunities and diversity. We welcome enrollments from all interested learners and do not discriminate on the basis of race, color, religion, sex, national origin, age, disability, or any other characteristic protected by law.</p><br>
+
+<p>We appreciate your interest in our courses and look forward to reviewing your enrollment. Happy learning!</p><br>
+
   </p>
   <div></div>
   `,

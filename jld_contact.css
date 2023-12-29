@@ -39,6 +39,21 @@ header {
   width: 80px;
   height: 80px;
 }
+.toggle-button {
+  position: absolute;
+  top: 1.9rem;
+  right: 0.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 21px;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+}
 
 .navdiv {
   display: flex;
@@ -254,44 +269,81 @@ span {
   margin: 0 auto;
   margin-bottom: 5px;
 }
+
+.footeraddress p:nth-of-type(2) {
+  margin-left: 0px;
+}
 /* End of footer */
 /* Media Query */
-@media screen and (max-width: 800px) {
-  body {
-    background: url(Homescreen.png) no-repeat center fixed;
-    /* I need a background image 800 by 1280 */
-    background-size: contain;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  }
+
+@media screen and (max-width: 1023px) {
   .navul li {
-    margin: 2px;
+    display: none;
   }
-  .footerdiv p {
+  .toggle-button {
+    display: flex;
+  }
+  .navdiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navdiv ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    /* margin-top: -50px;  */
+  }
+  .navdiv ul li:last-child {
+    margin-left: 30px;
+  }
+  .navdiv ul li {
+    margin-top: -5px;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+  }
+  .navdiv ul li:hover .sub-menu-1 {
     display: none;
   }
 
-  /* end of footer */
-  /* media query */
-}
+  main h1 {
+    font-size: 1.5rem;
+  }
+  main h2 {
+    font-size: 1.2rem;
+  }
 
-@media screen and (max-width: 600px) {
-  body {
-    background: url(Homescreen.png) no-repeat center fixed;
-    /* I need a background image 800 by 1280 */
-    background-size: contain;
-    position: relative;
-    display: flex;
-    flex-direction: column;
+  p {
+    font-size: 0.85rem;
   }
-  .navul li {
-    margin: 0;
+  .map {
+    width: 90%;
   }
-  .footerdiv p {
-    display: none;
-  }
+  .footerdiv p,
   .footeraddress {
     display: none;
+  }
+  hr {
+    width: 100px;
+  }
+  .footerlists span {
+    margin-left: 90px;
+  }
+  .footerlists {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  .footerlists li a {
+    font-size: 0.75rem;
+  }
+  footer p:last-child {
+    text-align: center;
+    font-size: 0.73rem;
+    margin: 5px;
   }
 }

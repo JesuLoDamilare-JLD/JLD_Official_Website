@@ -13,6 +13,11 @@
 <body>    
     <header>
         <div class="navdiv">
+            <a href="#" class="toggle-button">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </a>
             <img class="navlogo" src="jld.png" alt="JLD logo">
         <ul class="navul">
             <li class="active"><a href="jld_home.html"><i class="fas fa-home"></i>Insight</a></li>
@@ -157,8 +162,9 @@
 <p>As you continue reading, you'll have the opportunity to see the pictures and profiles of our talented staff members. Each individual contributes their distinct skills and knowledge, contributing to our collaborative and dynamic work environment.</p>
 <p>We believe that the success of our clients stems from the expertise, dedication, and innovative thinking of our team. Our staff members are driven by a shared vision to deliver exceptional technology solutions and exceed client expectations.</p>
 <p>Join us on this journey as we present our extraordinary team, ready to embark on new challenges and create transformative technology solutions for our valued clients.</p>
+
 <div class="team">
-    <div class="ceo">
+    <div class="ceo" data-index="0">
         <img src="ceo.jpg" alt="CEO">
         <cite>Dare Emmanuel OLUMUYIWA</cite>
             <cite><em>CEO & Founder</em></cite>
@@ -166,7 +172,7 @@
         
        
     </div>
-    <div class="managers">
+    <div class="managers" data-index="1">
         <div>
             <img src="yaks.jpg" alt="Manager">
             <cite>Yakubu KINGDOM</cite>
@@ -182,7 +188,7 @@
         
         </div>
     </div>
-    <div class="hods">
+    <div class="hods" data-index="2">
         <div>
             <img src="oke.jpg" alt="HOD Computer Training">
             <cite>Okechukwu UMEZURIKE</cite>
@@ -210,9 +216,12 @@
             <cite>JLD Aveo Plus Ventures</cite>
             
         </div>
-        <div></div>
+        
     </div>
 </div>
+<button id="prev">Previous</button>
+<button id="next">Next</button>
+
 <h1>Join Our Community</h1>
 <p>
     Thank you for taking the time to learn about our company and the comprehensive range of technology solutions we offer. We are excited to be your trusted partner in meeting all your technology-related needs. Whether you're an individual looking to enhance your skills, a business seeking to establish your online presence, or in need of reliable ICT services, we have you covered.
@@ -270,6 +279,6 @@
     </div>
     <p>Copyright &copy; 2023 JLD Aveo+ Ventures. All rights reserved.</p>
 </footer>
-
+<script src="jld_toggle.js"></script>
 </body>
 </html>

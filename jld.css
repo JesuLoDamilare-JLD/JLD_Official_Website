@@ -396,7 +396,9 @@ footer p:last-child {
     width: 100%;
     text-align: center;
   }
-
+  .navdiv ul li:hover .sub-menu-1 {
+    display: none;
+  }
   .mainp h1 {
     font-size: 30px;
     margin-top: -15px;
@@ -482,7 +484,9 @@ footer p:last-child {
     width: 100%;
     text-align: center;
   }
-
+  .navdiv ul li:hover .sub-menu-1 {
+    display: none;
+  }
   .mainp h1 {
     font-size: 30px;
     margin-top: -60px;
@@ -569,7 +573,9 @@ footer p:last-child {
     width: 100%;
     text-align: center;
   }
-
+  .navdiv ul li:hover .sub-menu-1 {
+    display: none;
+  }
   .mainp h1 {
     font-size: 40px;
     margin-top: -60px;
@@ -656,7 +662,9 @@ footer p:last-child {
     width: 100%;
     text-align: center;
   }
-
+  .navdiv ul li:hover .sub-menu-1 {
+    display: none;
+  }
   .mainp h1 {
     font-size: 35px;
     margin-top: -60px;
@@ -743,7 +751,9 @@ footer p:last-child {
     width: 100%;
     text-align: center;
   }
-
+  .navdiv ul li:hover .sub-menu-1 {
+    display: none;
+  }
   .mainp h1 {
     font-size: 60px;
     margin-top: -60px;
@@ -830,7 +840,9 @@ footer p:last-child {
     width: 100%;
     text-align: center;
   }
-
+  .navdiv ul li:hover .sub-menu-1 {
+    display: none;
+  }
   .mainp h1 {
     font-size: 60px;
     margin-top: -60px;
@@ -892,36 +904,6 @@ footer p:last-child {
 }
 
 @media screen and (min-width: 912px) and (max-width: 1024px) {
-  .navul li {
-    display: none;
-  }
-  .toggle-button {
-    display: flex;
-  }
-  .navdiv {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .navdiv ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    /* margin-top: -50px;  */
-  }
-  .navdiv ul li:last-child {
-    margin-left: 30px;
-  }
-  .navdiv ul li {
-    margin-top: -5px;
-    padding: 5px;
-    width: 100%;
-    text-align: center;
-  }
-
   .mainp h1 {
     font-size: 60px;
     margin-top: -60px;
@@ -1003,7 +985,6 @@ footer p:last-child {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    /* margin-top: -50px;  */
   }
   .navdiv ul li:last-child {
     margin-left: 30px;
@@ -1014,7 +995,9 @@ footer p:last-child {
     width: 100%;
     text-align: center;
   }
-
+  .navdiv ul li:hover .sub-menu-1 {
+    display: none;
+  }
   .mainp h1 {
     font-size: 40px;
     margin-top: -60px;
@@ -1101,7 +1084,9 @@ footer p:last-child {
     width: 100%;
     text-align: center;
   }
-
+  .navdiv ul li:hover .sub-menu-1 {
+    display: none;
+  }
   .mainp h1 {
     font-size: 25px;
     margin-top: -15px;
@@ -1158,36 +1143,6 @@ footer p:last-child {
 }
 
 @media only screen and (device-width: 1024px) and (device-height: 600px) {
-  .navul li {
-    display: none;
-  }
-  .toggle-button {
-    display: flex;
-  }
-  .navdiv {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .navdiv ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    /* margin-top: -50px;  */
-  }
-  .navdiv ul li:last-child {
-    margin-left: 30px;
-  }
-  .navdiv ul li {
-    margin-top: -5px;
-    padding: 5px;
-    width: 100%;
-    text-align: center;
-  }
-
   .mainp h1 {
     font-size: 40px;
     margin-top: -60px;
@@ -1228,10 +1183,10 @@ footer p:last-child {
   #button a {
     font-size: 1.2rem;
   }
-  /* .footerdiv p,
+  .footerdiv p,
   .footeraddress {
     display: none;
-  } */
+  }
   hr {
     width: 100px;
   }

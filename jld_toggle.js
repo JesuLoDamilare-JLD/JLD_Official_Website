@@ -14,3 +14,19 @@ toggleButton.addEventListener("click", () => {
     });
   }
 });
+
+let currentSlide = 0;
+const slides = document.querySelectorAll(".team > div");
+slides[currentSlide].style.display = "block";
+
+document.getElementById("prev").addEventListener("click", () => {
+  slides[currentSlide].style.display = "none";
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  slides[currentSlide].style.display = "block";
+});
+
+document.getElementById("next").addEventListener("click", () => {
+  slides[currentSlide].style.display = "none";
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].style.display = "block";
+});

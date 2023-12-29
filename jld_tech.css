@@ -38,7 +38,21 @@ header {
   width: 80px;
   height: 80px;
 }
-
+.toggle-button {
+  position: absolute;
+  top: 1.9rem;
+  right: 0.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 21px;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+}
 .navdiv {
   display: flex;
   align-items: center;
@@ -255,44 +269,255 @@ span {
   margin: 0 auto;
   margin-bottom: 5px;
 }
+.footeraddress p:nth-of-type(2) {
+  margin-left: 0px;
+}
 /* End of footer */
 /* Media Query */
-@media screen and (max-width: 800px) {
-  body {
-    background: url(Homescreen.png) no-repeat center fixed;
-    /* I need a background image 800 by 1280 */
-    background-size: contain;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  }
+
+@media screen and (max-width: 767px) {
   .navul li {
-    margin: 2px;
+    display: none;
   }
-  .footerdiv p {
+  .toggle-button {
+    display: flex;
+  }
+  .navdiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navdiv ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    /* margin-top: -50px;  */
+  }
+  .navdiv ul li:last-child {
+    margin-left: 30px;
+  }
+  .navdiv ul li {
+    margin-top: -5px;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+  }
+  .navdiv ul li:hover .sub-menu-1 {
     display: none;
   }
 
-  /* end of footer */
-  /* media query */
-}
-
-@media screen and (max-width: 600px) {
-  body {
-    background: url(Homescreen.png) no-repeat center fixed;
-    /* I need a background image 800 by 1280 */
-    background-size: contain;
-    position: relative;
-    display: flex;
-    flex-direction: column;
+  p {
+    font-size: 0.73rem;
   }
-  .navul li {
-    margin: 0;
+  main h1 {
+    font-size: x-large;
   }
-  .footerdiv p {
-    display: none;
+  .techserv {
+    width: 90%;
   }
+  .techservices img {
+    max-width: 150px;
+  }
+  .text {
+    max-width: 40%;
+    font-size: 0.5rem;
+  }
+  .techservices {
+    margin: 30px 0;
+  }
+  .footerdiv p,
   .footeraddress {
     display: none;
+  }
+  hr {
+    width: 100px;
+  }
+  .footerlists span {
+    margin-left: 90px;
+  }
+  .footerlists {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  footer p:last-child {
+    text-align: center;
+    font-size: 0.73rem;
+    margin: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .navul li {
+    display: none;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .navdiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navdiv ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    /* margin-top: -50px;  */
+  }
+  .navdiv ul li:last-child {
+    margin-left: 30px;
+  }
+  .navdiv ul li {
+    margin-top: -5px;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+  }
+  .navdiv ul li:hover .sub-menu-1 {
+    display: none;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+  main h1 {
+    font-size: x-large;
+  }
+
+  .techserv {
+    width: 75%;
+  }
+
+  .techservices img {
+    max-width: 230px;
+  }
+  .text {
+    max-width: 40%;
+    font-size: 0.83rem;
+  }
+  .techservices {
+    margin: 30px 0;
+  }
+  .footerdiv p,
+  .footeraddress {
+    display: none;
+  }
+  hr {
+    width: 100px;
+  }
+  .footerlists span {
+    margin-left: 90px;
+  }
+  .footerlists {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  footer p:last-child {
+    text-align: center;
+    font-size: 0.73rem;
+    margin: 5px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  p {
+    font-size: 0.83rem;
+  }
+  main h1 {
+    font-size: x-large;
+  }
+
+  .techservices img {
+    max-width: 250px;
+  }
+  .text {
+    max-width: 40%;
+    font-size: 0.83rem;
+  }
+  .techservices {
+    margin: 30px 0;
+  }
+}
+
+@media only screen and (device-width: 280px) and (device-height: 653px) {
+  .navul li {
+    display: none;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .navdiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navdiv ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    /* margin-top: -50px;  */
+  }
+  .navdiv ul li:last-child {
+    margin-left: 30px;
+  }
+  .navdiv ul li {
+    margin-top: -5px;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+  }
+  .navdiv ul li:hover .sub-menu-1 {
+    display: none;
+  }
+
+  p {
+    font-size: 0.73rem;
+  }
+  main h1 {
+    font-size: large;
+  }
+  .techserv {
+    width: 90%;
+  }
+  .techservices img {
+    max-width: 130px;
+  }
+  .text {
+    max-width: 40%;
+    font-size: 0.5rem;
+  }
+  .techservices {
+    margin: 30px 0;
+  }
+  .footerdiv p,
+  .footeraddress {
+    display: none;
+  }
+  hr {
+    width: 100px;
+  }
+  .footerlists span {
+    margin-left: 90px;
+  }
+  .footerlists {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  footer p:last-child {
+    text-align: center;
+    font-size: 0.73rem;
+    margin: 5px;
   }
 }
