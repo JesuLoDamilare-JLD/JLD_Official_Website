@@ -150,7 +150,7 @@ header {
 .mainp h1 {
   text-align: center;
   margin-bottom: 0px;
-  font-size: 80px;
+  font-size: 60px;
   color: #b2ff00;
 }
 .maindiv {
@@ -488,7 +488,7 @@ footer p:last-child {
     display: none;
   }
   .mainp h1 {
-    font-size: 30px;
+    font-size: 25px;
     margin-top: -60px;
     margin-bottom: 0px;
   }
@@ -577,7 +577,7 @@ footer p:last-child {
     display: none;
   }
   .mainp h1 {
-    font-size: 40px;
+    font-size: 35px;
     margin-top: -60px;
     margin-bottom: 0px;
   }
@@ -666,7 +666,7 @@ footer p:last-child {
     display: none;
   }
   .mainp h1 {
-    font-size: 35px;
+    font-size: 30px;
     margin-top: -60px;
     margin-bottom: 0px;
   }
@@ -755,7 +755,7 @@ footer p:last-child {
     display: none;
   }
   .mainp h1 {
-    font-size: 60px;
+    font-size: 50px;
     margin-top: -60px;
     margin-bottom: 0px;
   }
@@ -844,7 +844,7 @@ footer p:last-child {
     display: none;
   }
   .mainp h1 {
-    font-size: 60px;
+    font-size: 50px;
     margin-top: -60px;
     margin-bottom: 0px;
   }
@@ -905,7 +905,7 @@ footer p:last-child {
 
 @media screen and (min-width: 912px) and (max-width: 1024px) {
   .mainp h1 {
-    font-size: 60px;
+    font-size: 50px;
     margin-top: -60px;
     margin-bottom: 0px;
   }
@@ -999,7 +999,7 @@ footer p:last-child {
     display: none;
   }
   .mainp h1 {
-    font-size: 40px;
+    font-size: 35px;
     margin-top: -60px;
     margin-bottom: 0px;
   }
@@ -1088,7 +1088,7 @@ footer p:last-child {
     display: none;
   }
   .mainp h1 {
-    font-size: 25px;
+    font-size: 20px;
     margin-top: -15px;
     margin-bottom: 0px;
   }
@@ -1144,7 +1144,7 @@ footer p:last-child {
 
 @media only screen and (device-width: 1024px) and (device-height: 600px) {
   .mainp h1 {
-    font-size: 40px;
+    font-size: 35px;
     margin-top: -60px;
     margin-bottom: 0px;
   }
