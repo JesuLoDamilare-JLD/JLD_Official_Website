@@ -8,10 +8,21 @@ let services = [
   "Dynamic Printing 🖨",
 ];
 let i = 0;
+let j = 0;
+let currentService = "";
+
 const changeServices = () => {
-  document.getElementById(
-    "welcomeMessage"
-  ).innerHTML = `Welcome to Our Hub of ${services[i]}`;
-  i = (i + 1) % services.length;
+  let welcomeMessage = document.getElementById("welcomeMessage");
+  if (j <= currentService.length) {
+    welcomeMessage.innerHTML = `Welcome to Our Hub of ${currentService.slice(
+      0,
+      j++
+    )}`;
+  } else {
+    i = (i + 1) % services.length;
+    currentService = services[i];
+    j = 0;
+  }
 };
-setInterval(changeServices, 2000);
+
+setInterval(changeServices, 200); // Adjust speed as needed
