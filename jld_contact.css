@@ -38,7 +38,6 @@ header {
   display: inline;
   width: 80px;
   height: 80px;
-  margin: auto;
 }
 .toggle-button {
   position: absolute;
@@ -49,7 +48,6 @@ header {
   justify-content: space-between;
   width: 35px;
   height: 21px;
-  margin: auto;
 }
 .toggle-button .bar {
   height: 3px;
