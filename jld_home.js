@@ -26,3 +26,32 @@ const changeServices = () => {
 };
 
 setInterval(changeServices, 200); // Adjust speed as needed
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document
+    .getElementsByClassName("slideshow")[0]
+    .getElementsByTagName("img");
+
+  // Hide all images
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  // Increment index
+  slideIndex++;
+
+  // Reset index if it's greater than the number of slides
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+
+  // Show the current slide
+  slides[slideIndex - 1].style.display = "block";
+
+  // Change slide every 2 seconds
+  setTimeout(showSlides, 2000);
+}
