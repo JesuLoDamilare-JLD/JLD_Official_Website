@@ -184,13 +184,14 @@ button a {
 }
 .slideshow {
   position: relative;
-  width: 800px;
+  max-width: 800px;
   height: 500px;
+
+  border-radius: 50px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .slideshow img {
-  position: absolute;
   top: 0;
   left: 0;
   display: none;
@@ -198,10 +199,8 @@ button a {
   height: 100%;
   object-fit: contain;
   object-position: center;
-  border-radius: 500px;
-}
-.slideshow img:first-child {
-  display: block;
+
+  border-radius: 50px;
 }
 
 .quote {
